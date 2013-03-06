@@ -6,7 +6,7 @@ Usage of this script is pretty simple and we've thoroughly tested it and it work
 
 **BACKUP FIRST!!**
 
-Users just have to copy the files and folders I’ve provided into the OpenEMR directory, details below:
+Users just have to copy the files and folders I’ve provided, into the OpenEMR directory. Details below:
 
 **Files Modified: (replace the existing)**
 /var/www/openemr/library/globals.inc.php
@@ -51,9 +51,10 @@ http://IP_NUMBER/openemr/modules/sms_email_reminder/cron_sms_notification.php
 * If all’s OK, you should see something like what’s in the screenshot at:
 [http://www.NetConnexions.net/twilioopenemr/sms_sent_success.jpg](http://www.NetConnexions.net/twilioopenemr/sms_sent_success.jpg)
 and you should receive the SMS(if your Twilio a/c has enough SMS credits). You can also log into your Twilio a/c and see the SMS Messages Log. I’ve placed a snapshot showing 3 successful SMS’s sent:
-[http://www.NetConnexions.net/twilioopenemr/sms_sent_success.jpg](http://www.NetConnexions.net/twilioopenemr/sms_sent_success.jpg)
+[http://www.NetConnexions.net/twilioopenemr/twilio_log.jpg](http://www.NetConnexions.net/twilioopenemr/twilio_log.jpg)
+
 ### 4. Getting the SMS’s out:
-Once all the above is in place, schedule appointments in OpenEMR as normal and 50hrs before (or whatever you’ve set for SMS Notification Hours) the appointment, reminder SMS’s should be received and reflected in your Twilio SMS logs.
+Once all the above is in place, schedule appointments in OpenEMR as normal and 50hrs before the appointment(or whatever you’ve set for SMS Notification Hours), reminder SMS’s should be sent out as an automated background process and reflected in your Twilio SMS logs.
 **Note: For your current and new patients, set their Mobile Phone numbers using the number format: +CountrycodeAreacodeNumber (preceding + is important and there should be no spaces, hyphens or periods anywhere) ). Make sure you select ‘Yes’ for your test patient’s “Allow SMS” (in Demographics >> Choices).**
 
 If you want to see a working version of this in OpenEMR, send me a private message and I’ll give you access to mine.
