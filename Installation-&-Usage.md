@@ -60,6 +60,7 @@ Once all the above is in place, schedule appointments in OpenEMR as normal and 5
 If you want to see a working version of this in OpenEMR, send me a private message and I’ll give you access to mine.
 
 If you require any additional info or clarifications, pls contact me.
+I can also provide reports on the modifications made to **globals.inc.php** and **cron_sms_notification.php** showing side-by-side comparisons of the original vs. the modified versions.
 
 Thanks and Kind Regards,
 Fayyaz Kasmani.
